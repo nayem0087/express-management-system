@@ -28,7 +28,7 @@ app.post('/users', (req, res) => {
     newUser.id = users.length + 1;
     users.push(newUser);
 
-    res.send({success: true, data: newUser, message: 'Post method is Working!'});
+    res.send({success: true, data: newUser, message: 'Post method is Working! New user added successfully.'});
 })
 
 app.get('/products', (req, res) => {
